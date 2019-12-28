@@ -22,7 +22,8 @@ Make sure to configure firebase with this project before running this project on
 
 <br>
 
-Check out this project's [tutorial](https://www.sandytech.co.in/android-login-and-registration-using-firebase-and-kotlin/) for more details <br>.
+Check out this project's [tutorial](https://www.sandytech.co.in/android-login-and-registration-using-firebase-and-kotlin/) for more details.
+<br>
 Visit Official Website : [SandyTech](https://www.sandytech.co.in)
 
 ## Social Media Links:
