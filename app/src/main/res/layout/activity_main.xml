@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorAccent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="It's good to see you here!\nWelcome To SandyTech - News Application"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:padding="8dp"
+                android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_margin="4dp">
+
+            <EditText
+                    android:id="@+id/inputRegisteredEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Registered Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_margin="4dp">
+
+            <EditText
+                    android:id="@+id/inputNewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Email to Register"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_margin="4dp">
+
+            <EditText
+                    android:id="@+id/inputOldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Old Password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_margin="4dp">
+
+            <EditText
+                    android:id="@+id/inputNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+                android:id="@+id/btnChangeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Change Email"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:visibility="gone"/>
+
+        <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Change Password"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:visibility="gone"/>
+
+        <Button
+                android:id="@+id/btnResetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Reset Password"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:visibility="gone"/>
+
+        <Button
+                android:id="@+id/btnRemoveUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Remove User"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:visibility="gone"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="--- Select Operation to Perform ---"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/actionChangeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Email Address"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        <Button
+                android:id="@+id/actionChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        <Button
+                android:id="@+id/actionResetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password Reset Details"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        <Button
+                android:id="@+id/actionRemoveUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        <Button
+                android:id="@+id/btnSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimary"
+                android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
